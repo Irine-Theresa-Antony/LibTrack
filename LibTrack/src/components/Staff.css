@@ -1,0 +1,34 @@
+.form-container {
+    border: 2px solid #2b1e1e; /* Border for the form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the border */
+    margin-bottom: 20px; /* Space below the form */
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+  }
+  
+  .form-container input {
+    margin-bottom: 10px; /* Space between inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #2b1e1e; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+  }
+  
+  .form-container button {
+    margin-top: 10px; /* Space above buttons */
+    padding: 10px; /* Padding inside buttons */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    background-color: #2b1e1e; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .form-container button:hover {
+    background-color: #2b1e1e; /* Darker background on hover */
+  }
+  

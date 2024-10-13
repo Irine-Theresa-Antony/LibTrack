@@ -1,0 +1,244 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e4e8ec; /* Default background for the entire page */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #2b1e1e; /* Darker sidebar */
+    color: white;
+    height: 100vh; /* Full height for the sidebar */
+    padding: 20px; /* Space inside the sidebar */
+    width: 150px; /* Sidebar width */
+    position: fixed; /* Fix sidebar position */
+    top: 0; /* Align to the top */
+    left: 0; /* Stick to the left of the viewport */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for depth */
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Navigation Link Styles */
+.nav-link {
+    padding: 10px 15px; /* Space around the links */
+    font-size: 1.1em; /* Increase font size */
+    color: #ddd; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    display: flex;
+    align-items: center; /* Center items horizontally */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s; /* Smooth transition */
+}
+
+.nav-link:hover {
+    background-color: #495057; /* Background on hover */
+    color: white; /* Text color on hover */
+}
+
+.nav-link i {
+    margin-right: 10px; /* Space for the icon */
+}
+
+/* Main Content Styles */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.main-content {
+    margin-left: 150px; /* Offset to accommodate the sidebar */
+    width: calc(100% - 150px); /* Adjust width to fill remaining space */
+}
+
+.header {
+    background-color: #2b1e1e; /* Darker header background */
+    color: white;
+    text-align: center; /* Center text */
+    padding: 10px; /* Space inside the header */
+}
+
+.page-content {
+    background-color: #f7f7f7; /* Light background for main content */
+    min-height: calc(100vh - 50px); /* Full height minus header height */
+    padding: 20px; /* Space around content */
+    margin: 0; /* Ensure no margins push it down */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for depth */
+}
+
+/* Flexbox alignment for forms */
+.page-content > div {
+    display: flex; /* Make inner divs flex containers */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Input field styles for forms (Books, Members, and Genre) */
+input[type="text"], input[type="number"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    margin: 10px 0; /* Space around the input */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    border: 1px solid #2b1e1e; /* Border for the input */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-size: 16px; /* Font size consistent with other forms */
+}
+
+/* Focus state for inputs */
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #2b1e1e; /* Darker border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Form label styles */
+label {
+    font-size: 16px; /* Consistent font size for labels */
+    color: #333; /* Darker text color */
+    margin-bottom: 5px; /* Space between label and input */
+    display: block; /* Ensure labels are on their own line */
+}
+
+/* Button styles */
+.btn-success {
+    width: auto; /* Change width to auto */
+    margin-top: 20px; /* Space above the button */
+    height: 40px; /* Button height */
+    font-size: 16px; /* Increase font size */
+    background-color: #7a4013 !important; /* Solid brown color */
+    color: white !important; /* White text color */
+    border: none !important; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-success:hover {
+    background-color: hsl(33, 64%, 23%) !important; /* Darker brown on hover */
+}
+
+/* Form container with border and padding */
+.custom-border {
+    border: 2px solid #2b1e1e; /* Border color */
+    border-radius: 8px; /* Keep the rounded corners */
+    padding: 10px; /* Remove padding */
+    width: 30%; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the form */
+    overflow: hidden; /* Ensure the translucent layer fits within the border */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px; /* Adjust sidebar width on smaller screens */
+    }
+
+    .main-content {
+        margin-left: 100px; /* Adjust main content margin */
+        width: calc(100% - 100px); /* Adjust main content width */
+    }
+
+    .btn-success {
+        width: 100%; /* Make button full width on smaller screens */
+    }
+
+    .custom-border {
+        width: 90%; /* Adjust form width on smaller screens */
+    }
+}
+
+/* Centering Styles */
+.vh-100 {
+    height: 100vh; /* Full viewport height */
+}
+
+.d-flex {
+    display: flex; /* Enable Flexbox */
+}
+
+.justify-content-center {
+    justify-content: center; /* Center horizontally */
+}
+
+.align-items-center {
+    align-items: center; /* Center vertically */
+}
+
+.text-center {
+    text-align: center; /* Center text */
+}
+/* General List Styles */
+.list-group {
+    padding: 20px; /* Add padding to the list group */
+    margin-bottom: 20px; /* Space below the list group */
+    border-radius: 0.5rem; /* Rounded corners for the list */
+    background-color: #f8f9fa; /* Light background for the list */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Individual List Item Styles */
+.list-group-item {
+    padding: 15px 20px; /* Increase padding for vertical and horizontal space */
+    margin: 10px 0; /* Space between list items */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef; /* Highlight on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Additional Vertical Space for Sections */
+.page-content {
+    padding: 30px; /* Add padding to the main content area */
+    margin-bottom: 20px; /* Space below the main content */
+}
+
+.LoginPage {
+    background: url('/images/lib.jpg'); /* Adjusted path */
+    background: linear-gradient(rgba(11,11,11,0.5), rgba(10,10,10,0.5)), url('/images/lib.jpg'); /* Adjusted path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.translucent-layer {
+    background: rgba(64, 37, 16, 0.5); /* White with transparency */
+    border-radius: inherit; /* Inherit the border radius */
+    box-shadow: none; /* Remove any additional shadow */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    padding: 20px; /* Padding for the content inside the translucent layer */
+    height: 100%; /* Ensure it fills the parent */
+    width:89%;  /* Ensure it fills the parent */
+    color: white;
+}
+.LoginPage label {
+    color: rgb(103, 77, 48); /* Change label text color to white on the login page */
+}
+
+.translucent-layer label {
+    color: rgb(103, 77, 48); /* Change label text color inside the translucent layer */
+}
+table {
+    width: 100%; /* Make sure the table takes full width */
+    border-collapse: collapse; /* Collapse borders for better appearance */
+}
+
+table tr {
+    border-bottom: 1px solid #ccc; /* Light gray line for separation */
+}
+
+table tr:last-child {
+    border-bottom: none; /* Remove the border from the last row */
+}
+
+table td, table th {
+    padding: 10px; /* Add some padding to cells */
+    text-align: center; /* Left align text */
+}
+
