@@ -1,10 +1,10 @@
 import mysql from 'mysql';
 function handleDisconnect() {
   const con = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '12345',
-    database: 'lib_tracker'
+    host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME
   });
 
   con.connect((err) => {
